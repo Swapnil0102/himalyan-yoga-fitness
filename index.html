@@ -7,7 +7,7 @@
     <meta name="keywords" content="Directing, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zogin | Template</title>
+    <title>Himalyan Yog | Template</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -22,6 +22,42 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
+<style>
+    /* Container settings for uniformity */
+.gallery__pic {
+    position: relative;
+    width: 100%;  /* Let the container adjust responsively */
+    height: 200px; /* Fixed height for all images */
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Center the image and crop from middle */
+    object-position: center;  /* Always crop from the middle */
+    display: block;
+}
+
+.col-lg-3, .col-md-4, .col-6 {
+    padding: 5px;  /* Add spacing between images */
+}
+
+/* Responsive breakpoints for small and medium screens */
+@media (max-width: 768px) {
+    .col-lg-3 {
+        width: 50%;  /* 2 images per row on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-3 {
+        width: 100%;  /* 1 image per row on small screens */
+    }
+}
+
+</style>
 
 <body>
     <!-- Page Preloder -->
@@ -38,11 +74,11 @@
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__widget">
             <ul>
-                <li>CALL US: + 1 800-567-8990</li>
-                <li>WRITE US: OFFICE@EXAMPLE.COM</li>
+                <li>CALL US: +91 9149151212</li>
+                <li>WRITE US: swapnilraj0102@gmail.COM</li>
                 <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
             </ul>
-            <a href="#" class="primary-btn">JOIN US</a>
+            <a href="#" class="primary-btn" style="background: #041454;">BOOK NOW</a>
         </div>
         <nav class="header__menu">
             <ul class="mobile-menu">
@@ -77,7 +113,7 @@
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
                         <div class="header__logo">
-                            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                            <a href="./index.html"><img src="img/logo.png" style="max-width: 69%;"></a>
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-9">
@@ -87,7 +123,7 @@
                                 <li>WRITE US: OFFICE@EXAMPLE.COM</li>
                                 <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
                             </ul>
-                            <a href="#" class="primary-btn">JOIN US</a>
+                            <a href="#" class="primary-btn" style="background: #041454;">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -140,9 +176,9 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="hero__text">
-                                <span>Welcome to Zogin</span>
-                                <h2>What hurts today makes you stronger tomorrow</h2>
-                                <a href="#" class="primary-btn">DISCOVER MORE</a>
+                                <span>Welcome to Himalayan Yog</span>
+                                <h2>Yoga for Your Busy Life Wellness at Your Fingertips.</h2>
+                                <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -153,9 +189,9 @@
                     <div class="row">
                         <div class="col-lg-8">
                             <div class="hero__text">
-                                <span>Welcome to Zogin</span>
-                                <h2>What hurts today makes you stronger tomorrow</h2>
-                                <a href="#" class="primary-btn">DISCOVER MORE</a>
+                                <span>Welcome to Himalayan Yog</span>
+                                <h2>Find Balance in the Chaos—Live Yoga Anytime, Anywhere.</h2>
+                                <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -181,18 +217,15 @@
                 <div class="col-lg-5">
                     <div class="home__about__text">
                         <div class="section-title">
-                            <img src="img/icon.png" alt="">
-                            <h2>Welcome to Zogin</h2>
+                            <img src="img/mountain_clip.png" alt="" style="max-width: 19%;">
+                            <h2>Welcome to Himalayan Yog</h2>
                         </div>
-                        <span>“What hurts today makes you stronger tomorrow.”</span>
-                        <p>We are offering internationally certified 200 Hour Yoga Teacher Training in Rishikesh and 300
-                            hour yoga teacher training in Rishikesh, India - Join us to have such life-transforming
-                            experience in The world capital of Yoga in Rishikesh.</p>
-                        <p class="para-2">Zogin is a great place for those who are in search of the ancient practice and
-                            true essence of yoga, meditation, health, peace and learning the art of creating a class to
-                            teach safely. We are passionate about adjustments and mainly focus on the alignment of the
-                            asanas.</p>
-                        <a href="#" class="primary-btn">MORE ABOUT US</a>
+                        <span>“Yoga for Your Busy Life—Wellness at Your Fingertips.”</span>
+                        <p>Himalayan Yog helps busy people stay fit and healthy with live online yoga and Zumba classes. With today’s hectic lifestyles, many struggle to attend offline fitness sessions. Himalayan Yog offers a flexible, affordable solution with expert-led classes that fit easily into any schedule.</p>
+                        <p class="para-2" style=" margin-bottom: 21px; ">Himalayan Yog offers live, expert-led yoga and Zumba classes, including specialized sessions for pregnant women, household ladies, and busy working professionals. Whether you want to improve flexibility with yoga or boost energy with Zumba, Himalayan Yog helps you stay active, reduce stress, and lead a healthier life – all from the comfort of your home.
+
+                        </p>
+                        <a href="#" class="primary-btn" style="background: #041454;">MORE ABOUT US</a>
                     </div>
                 </div>
             </div>
@@ -206,7 +239,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <img src="img/icon.png" alt="">
+                        <img src="img/mountain_clip.png" alt="" style="max-width: 8%;">
                         <h2>Enjoy All Aspects Of Yoga</h2>
                     </div>
                 </div>
@@ -343,7 +376,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="classes__item">
                         <div class="classes__item__pic set-bg" data-setbg="img/classes/classes-1.jpg">
-                            <span>20 Jun 2019</span>
+                            <span style="background: #041454;">20 Jun 2019</span>
                         </div>
                         <div class="classes__item__text">
                             <p>14 Days | Start on 10th Every Month</p>
@@ -356,7 +389,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="classes__item">
                         <div class="classes__item__pic set-bg" data-setbg="img/classes/classes-2.jpg">
-                            <span>20 Jun 2019</span>
+                            <span style="background: #041454;">20 Jun 2019</span>
                         </div>
                         <div class="classes__item__text">
                             <p>14 Days | Start on 10th Every Month</p>
@@ -369,7 +402,7 @@
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="classes__item">
                         <div class="classes__item__pic set-bg" data-setbg="img/classes/classes-3.jpg">
-                            <span>20 Jun 2019</span>
+                            <span style="background: #041454;">20 Jun 2019</span>
                         </div>
                         <div class="classes__item__text">
                             <p>14 Days | Start on 10th Every Month</p>
@@ -383,66 +416,117 @@
         </div>
     </section>
     <!-- Classes Section End -->
+  <!-- Gallery Section Begin -->
+<section class="gallery">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title normal-title">
+                    <h2>Our Gallery</h2>
+                    <p>This is the beautiful yogis and yoginis who have shared their journey and growth with us. Take a look!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-1.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-2.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-3.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-4.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-5.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-6.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-7.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-8.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <!-- Gallery Section Begin -->
-    <section class="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title normal-title">
-                        <h2>Our Gallery</h2>
-                        <p>This is the beautiful yogi and yoginis that have shared their journey and growth with<br />
-                            us. Take a look!</p>
-                    </div>
+
+
+<!-- Gallery Section End -->
+
+
+
+<!-- Gallery Section End -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_1.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_2.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_3.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_4.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_5.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_6.webp" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_7.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_8.webp" alt="" class="gallery-img">
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-2.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-5.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-6.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-7.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6 p-0">
-                    <div class="gallery__pic">
-                        <img src="img/gallery/gallery-8.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Gallery Section End -->
+    </div>
+</section>
+<!-- Gallery Section End -->
 
     <!-- Team Section Begin -->
     <section class="instructor spad">
@@ -509,11 +593,11 @@
     <!-- Appoinment Section Begin -->
     <section class="appointment">
         <div class="container">
-            <div class="appointment__text">
+            <div class="appointment__text" style="background: #041454;">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="section-title">
-                            <img src="img/icon-white.png" alt="">
+                            <img src="img/mountain_clip.png" alt="" style=" max-width: 12%;">
                             <h2>Make An Appointment</h2>
                         </div>
                     </div>
@@ -553,10 +637,10 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-10">
                             <div class="testimonial__text">
-                                <p>This is my second time completing a 200 hr TTC from Zogin and I loved the experiences
+                                <p>This is my second time completing a 200 hr TTC from Himalyan Yog and I loved the experiences
                                     even more than the first time that I had done in 2014.</p>
                                 <img src="img/testimonial/testimonial-1.png" alt="">
-                                <h5>Linnie Walton <span>- Trainer</span></h5>
+                                <h5>Pallavi Sharma <span>- Trainer</span></h5>
                             </div>
                         </div>
                     </div>
@@ -565,10 +649,10 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-10">
                             <div class="testimonial__text">
-                                <p>This is my second time completing a 200 hr TTC from Zogin and I loved the experiences
+                                <p>This is my second time completing a 200 hr TTC from Himalyan Yog and I loved the experiences
                                     even more than the first time that I had done in 2015.</p>
                                 <img src="img/testimonial/testimonial-1.png" alt="">
-                                <h5>Linnie Walton <span>- Trainer</span></h5>
+                                <h5>Nikita Mishra<span>- Trainer</span></h5>
                             </div>
                         </div>
                     </div>
@@ -577,10 +661,10 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-10">
                             <div class="testimonial__text">
-                                <p>This is my second time completing a 200 hr TTC from Zogin and I loved the experiences
+                                <p>This is my second time completing a 200 hr TTC from Himalyan Yog and I loved the experiences
                                     even more than the first time that I had done in 2016.</p>
                                 <img src="img/testimonial/testimonial-1.png" alt="">
-                                <h5>Linnie Walton <span>- Trainer</span></h5>
+                                <h5>Mahika Kapoor<span>- Trainer</span></h5>
                             </div>
                         </div>
                     </div>
@@ -589,10 +673,10 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-lg-10">
                             <div class="testimonial__text">
-                                <p>This is my second time completing a 200 hr TTC from Zogin and I loved the experiences
+                                <p>This is my second time completing a 200 hr TTC from Himalyan Yog and I loved the experiences
                                     even more than the first time that I had done in 2017.</p>
                                 <img src="img/testimonial/testimonial-1.png" alt="">
-                                <h5>Linnie Walton <span>- Trainer</span></h5>
+                                <h5>Gunjan Taneja <span>- Trainer</span></h5>
                             </div>
                         </div>
                     </div>
@@ -603,19 +687,21 @@
     <!-- Testimonial Section End -->
 
     <!-- Footer Section Begin -->
-    <section class="footer">
+    <section class="footer" style="background: #002031;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer__about">
-                        <img src="img/footer-logo.png" alt="">
+                        <img src="img/footer-logo.jpg" alt="" style="max-width: 66%;" >
                         <ul>
                             <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:30am - 07:45pm</li>
                             <li><i class="fa fa-clock-o"></i> Sat - Sun: 8:30am - 05:45pm</li>
                         </ul>
                         <form action="#" class="subscribe-form">
                             <input type="text" placeholder="Your Email">
-                            <button type="submit"><i class="fa fa-send"></i></button>
+                            <button type="submit" style="
+                                background: #03537e
+                            "><i class="fa fa-send"></i></button>
                         </form>
                     </div>
                 </div>
@@ -648,7 +734,7 @@
                         <h5>Contact Us</h5>
                         <ul class="footer-address">
                             <li><i class="fa fa-phone"></i> (01) 436 8888</li>
-                            <li><i class="fa fa-envelope"></i> hello@zogin.com</li>
+                            <li><i class="fa fa-envelope"></i> hello@Himalyan Yog.com</li>
                             <li><i class="fa fa-location-arrow"></i> 828 Granville Lights Suite 466</li>
                         </ul>
                     </div>
@@ -659,7 +745,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-6">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <div class="footer__copyright__text">
-                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Himalayan Yog.</a></p>
                         </div>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>

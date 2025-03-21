@@ -1,5 +1,5 @@
 /*  ---------------------------------------------------
-    Template Name: Zogin
+    Template Name: Himalyan Yog
     Description:  Phozogy Yoga HTML Template
     Author: Colorlib
     Author URI: https://colorlib.com
