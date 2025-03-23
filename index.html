@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    
 </head>
 
 <style>
@@ -178,7 +179,8 @@
                             <div class="hero__text">
                                 <span>Welcome to Himalayan Yog</span>
                                 <h2>Yoga for Your Busy Life Wellness at Your Fingertips.</h2>
-                                <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a>
+                                <!-- <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a> -->
+                                <a href="#" class="primary-btn" style="background-color: #59abc8; color: #02051e;" data-toggle="modal" data-target="#bookNowModal">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -191,7 +193,8 @@
                             <div class="hero__text">
                                 <span>Welcome to Himalayan Yog</span>
                                 <h2>Find Balance in the Chaos—Live Yoga Anytime, Anywhere.</h2>
-                                <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a>
+                                <!-- <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a> -->
+                                <a href="#" class="primary-btn" style="background-color: #59abc8; color: #02051e;" data-toggle="modal" data-target="#bookNowModal">BOOK NOW</a>
                             </div>
                         </div>
                     </div>
@@ -200,6 +203,52 @@
         </div>
     </section>
     <!-- Hero Section End -->
+
+
+    <!-- Book Now Modal -->
+<div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="bookNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="border-radius: 12px;">
+        <div class="modal-header" style="background-color: #59abc8; color: #fff;">
+          <h5 class="modal-title" id="bookNowModalLabel">Start Your Fitness Journey</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <!-- Hidden iframe to avoid CORS issues -->
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+        <form method="POST" id="bookNowForm" action="https://script.google.com/macros/s/AKfycbyMTuHale-e3ONIHs5DpyDHYdWEsI0ViwWSfXUcZsMCbGVw9V2XYIXTN5R3q_zuPK4U/exec" target="hidden_iframe">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="Name" class="form-control" id="name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="whatsapp">Phone No. (Whatsapp)</label>
+            <input type="tel" name="Phone" class="form-control" id="whatsapp" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="Email" class="form-control" id="email" required />
+        </div>
+
+        <!-- <button type="submit">Submit</button> -->
+        </form>
+
+              
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn" style="background-color: #59abc8; color: #fff;" form="bookNowForm">Submit</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
 
     <!-- About Section Begin -->
     <section class="home-about spad">
@@ -678,7 +727,7 @@
                         </div>
                     </div>
                 </div>
-                <form action="#" class="appointment__form">
+                <form action="https://script.google.com/macros/s/AKfycbyMTuHale-e3ONIHs5DpyDHYdWEsI0ViwWSfXUcZsMCbGVw9V2XYIXTN5R3q_zuPK4U/exec" class="appointment__form" >
                     <div class="row">
                         <div class="col-lg-6">
                             <input type="text" placeholder="Name">
@@ -839,6 +888,9 @@
     </section>
     <!-- Footer Section End -->
 
+
+
+
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -847,6 +899,62 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+
+       <script>
+        document.getElementById("bookNowForm").addEventListener("submit", function (e) {
+          // Get form values
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("whatsapp").value;
+          const email = document.getElementById("email").value;
+      
+          // Wait 1 second then open WhatsApp (give time for submission)
+          setTimeout(() => {
+            const message =
+              "Hi, I'm interested in your fitness program!%0a" +
+              "Name: " + name + "%0a" +
+              "Phone: " + phone + "%0a" +
+              "Email: " + email + "%0a" +
+              "Service: Fitness Program";
+            
+            phone_no = "919808421337"
+            const whatsappURL = "https://wa.me/" + phone + "?text=" + message;
+            window.open(whatsappURL, "_blank");
+            
+            console.log("Form submitted successfully!")
+            // alert("Form submitted successfully!");
+            e.target.reset();
+          }, 1000); // delay to ensure form is submitted
+        });
+      </script>
+      
+
+       <script>
+            function handleWhatsAppRedirect(form) {
+                // Dummy test values
+                const name = "Test User";
+                const phone = "9149151212"; // Fixed WhatsApp number
+                const email = "test@example.com";
+                const service = "Zumba";
+
+                // Compose WhatsApp message
+                const message = 
+                    "Hi, I'm interested in your fitness program!%0a" +
+                    "Name: " + name + "%0a" +
+                    "Phone: " + phone + "%0a" +
+                    "Email: " + email + "%0a" +
+                    "Service: " + service;
+
+                const whatsappURL = "https://wa.me/" + phone + "?text=" + message;
+
+                // Open WhatsApp before form submits
+                window.open(whatsappURL, "_blank");
+
+                // Let the form continue submitting to Google Sheet
+                return true;
+            }
+      </script>
+      
+      
 </body>
 
 </html>
