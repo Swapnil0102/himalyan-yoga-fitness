@@ -211,7 +211,7 @@
       <div class="modal-content" style="border-radius: 12px;">
         <div class="modal-header" style="background-color: #59abc8; color: #fff;">
           <h5 class="modal-title" id="bookNowModalLabel">Start Your Fitness Journey</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;">
+          <button id="close-modal-btn" type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
@@ -923,6 +923,9 @@
             console.log("Form submitted successfully!")
             // alert("Form submitted successfully!");
             e.target.reset();
+            var modal = document.getElementById('close-modal-btn');
+            modal.click();
+            
           }, 1000); // delay to ensure form is submitted
         });
       </script>
