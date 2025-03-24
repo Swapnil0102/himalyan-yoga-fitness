@@ -235,6 +235,15 @@
             <input type="email" name="Email" class="form-control" id="email" required />
         </div>
 
+        <div class="form-group">
+            <label for="service">Select Program</label> <br>
+            <select class="form-control" id="service" name="Service" required>
+              <option value="">-- Choose a Service --</option>
+              <option value="Yoga">Yoga</option>
+              <option value="Meditation">Zumba</option>
+              <!-- Add more programs if needed -->
+            </select>
+          </div>
         <!-- <button type="submit">Submit</button> -->
         </form>
 
@@ -917,7 +926,7 @@
               "Service: Fitness Program";
             
             phone_no = "919808421337"
-            const whatsappURL = "https://wa.me/" + phone + "?text=" + message;
+            const whatsappURL = "https://wa.me/" + phone_no + "?text=" + message;
             window.open(whatsappURL, "_blank");
             
             console.log("Form submitted successfully!")
@@ -935,7 +944,7 @@
             function handleWhatsAppRedirect(form) {
                 // Dummy test values
                 const name = "Test User";
-                const phone = "9149151212"; // Fixed WhatsApp number
+                const phone = "9808421337"; // Fixed WhatsApp number
                 const email = "test@example.com";
                 const service = "Zumba";
 
