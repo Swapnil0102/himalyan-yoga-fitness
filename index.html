@@ -220,31 +220,31 @@
         <iframe name="hidden_iframe" style="display:none;"></iframe>
 
         <form method="POST" id="bookNowForm" action="https://script.google.com/macros/s/AKfycbyMTuHale-e3ONIHs5DpyDHYdWEsI0ViwWSfXUcZsMCbGVw9V2XYIXTN5R3q_zuPK4U/exec" target="hidden_iframe">
-        <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" name="Name" class="form-control" id="name" required />
-        </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="Name" class="form-control" id="name" required />
+            </div>
 
-        <div class="form-group">
-            <label for="whatsapp">Phone No. (Whatsapp)</label>
-            <input type="tel" name="Phone" class="form-control" id="whatsapp" required />
-        </div>
+            <div class="form-group">
+                <label for="whatsapp">Phone No. (Whatsapp)</label>
+                <input type="tel" name="Phone" class="form-control" id="whatsapp" required />
+            </div>
 
-        <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" name="Email" class="form-control" id="email" required />
-        </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="Email" class="form-control" id="email" required />
+            </div>
 
-        <div class="form-group">
-            <label for="service">Select Program</label> <br>
-            <select class="form-control" id="service" name="Service" required>
-              <option value="">-- Choose a Service --</option>
-              <option value="Yoga">Yoga</option>
-              <option value="Zumba">Zumba</option>
-              <!-- Add more programs if needed -->
-            </select>
-          </div>
-        <!-- <button type="submit">Submit</button> -->
+            <div class="form-group">
+                <label for="service">Select Program</label> <br>
+                <select class="form-control" id="service" name="Service" required>
+                <option value="">-- Choose a Service --</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Zumba">Zumba</option>
+                <!-- Add more programs if needed -->
+                </select>
+            </div>
+            <!-- <button type="submit">Submit</button> -->
         </form>
 
               
@@ -732,32 +732,32 @@
                     <div class="col-lg-12">
                         <div class="section-title">
                             <img src="img/mountain_clip.png" alt="" style=" max-width: 12%;">
-                            <h2>Make An Appointment</h2>
+                            <h2>Chat with us</h2>
                         </div>
                     </div>
                 </div>
                 <!-- <iframe name="hidden_iframe" style="display:none;"></iframe> -->
-                <form  method="POST" action="https://script.google.com/macros/s/AKfycbyMTuHale-e3ONIHs5DpyDHYdWEsI0ViwWSfXUcZsMCbGVw9V2XYIXTN5R3q_zuPK4U/exec" class="appointment__form"  >
+                <form  id="customerSupportForm" class="appointment__form"  >
                     <div class="row">
                         <div class="col-lg-6">
-                            <input type="text" name="Name"  placeholder="Name" id="name" required />
+                            <input type="text" name="Name"  placeholder="Name" id="name_cs" required />
                         </div>
                         <div class="col-lg-6">
-                            <input type="email"  name="Email" id="email"  placeholder="Email" required>
+                            <input type="email"  name="Email" id="email_cs"  placeholder="Email">
                         </div>
                         <div class="col-lg-6">
-                            <input type="text" type="tel" name="Phone"  placeholder="Phone No. (Whatsapp)" id="whatsapp" required />
+                            <input type="text" type="tel" name="Phone"  placeholder="Phone No. (Whatsapp)" id="whatsapp_cs" required />
                         </div>
                         <div class="col-lg-6">
-                            <select id="service" class="class-select" name="Service">
+                            <select id="service_cs" class="class-select" name="Service">
                                 <option value="">Choose Your Class</option>
                                 <option value="Yoga">Yoga</option>
                                 <option value="Zumba">Zumba</option>
                             </select>
                         </div>
                         <div class="col-lg-12 text-center">
-                            <textarea placeholder="Message"></textarea>
-                            <button type="submit">Submit</button>
+                            <textarea placeholder="Message / Question?" id="enquiry_cs"></textarea>
+                            <button type="submit" form="customerSupportForm">Submit</button>
                         </div>
                     </div>
                 </form>
@@ -941,6 +941,36 @@
             
           }, 1000); // delay to ensure form is submitted
         });
+
+
+        document.getElementById("customerSupportForm").addEventListener("submit", function (e) {
+        //   // Get form values
+          const name = document.getElementById("name_cs").value;
+          const phone = document.getElementById("whatsapp_cs").value;
+          const email = document.getElementById("email_cs").value;
+          const service = document.getElementById("service_cs").value;
+          const msg = document.getElementById("enquiry_cs").value;
+        //   console.log(email + name + phone + service)
+
+        const message =
+            "Hi, I'm interested in your fitness program!%0a" +
+            "Name: " + name + "%0a" +
+            "Phone: " + phone + "%0a" +
+            "Email: " + email + "%0a" +
+            "Service: " + service + "%0a" +
+            "Enquiry Message: " + msg + "%0a";
+
+            // alert(email + name + phone + service + msg);
+            
+            phone_no = "919808421337"
+            const whatsappURL = "https://wa.me/" + phone_no + "?text=" + message;
+            window.open(whatsappURL, "_blank");
+            
+            console.log("Form submitted successfully!")
+        // alert(email + name + phone + service);
+        });
+
+
       </script>
       
 
