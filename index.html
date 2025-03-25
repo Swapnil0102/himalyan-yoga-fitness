@@ -7,7 +7,7 @@
     <meta name="keywords" content="Directing, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Himalyan Yog | Template</title>
+    <title>Himalyan Yog</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -79,7 +79,7 @@
                 <li>WRITE US: swapnilraj0102@gmail.COM</li>
                 <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
             </ul>
-            <a href="#" class="primary-btn" style="background: #041454;">BOOK NOW</a>
+            <a href="#" class="primary-btn" style="background: #041454;" data-toggle="modal" data-target="#bookNowModal">CONTACT US</a>
         </div>
         <nav class="header__menu">
             <ul class="mobile-menu">
@@ -124,7 +124,7 @@
                                 <li>WRITE US: OFFICE@EXAMPLE.COM</li>
                                 <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
                             </ul>
-                            <a href="#" class="primary-btn" style="background: #041454;">CONTACT US</a>
+                            <a href="#" class="primary-btn" style="background: #041454;" data-toggle="modal" data-target="#bookNowModal">CONTACT US</a>
                         </div>
                     </div>
                 </div>
@@ -240,7 +240,7 @@
             <select class="form-control" id="service" name="Service" required>
               <option value="">-- Choose a Service --</option>
               <option value="Yoga">Yoga</option>
-              <option value="Meditation">Zumba</option>
+              <option value="Zumba">Zumba</option>
               <!-- Add more programs if needed -->
             </select>
           </div>
@@ -574,36 +574,36 @@
                     <img src="img/gallery/gallery-2.jpg" alt="" class="gallery-img">
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6 p-0">
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/gallery-3.jpg" alt="" class="gallery-img">
                 </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/gallery-4.jpg" alt="" class="gallery-img">
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6 p-0">
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/gallery-5.jpg" alt="" class="gallery-img">
                 </div>
-            </div>
-            <div class="col-lg-3 col-md-4 col-6 p-0">
+            </div> -->
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/gallery-6.jpg" alt="" class="gallery-img">
                 </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/gallery-7.jpg" alt="" class="gallery-img">
                 </div>
             </div>
-            <div class="col-lg-3 col-md-4 col-6 p-0">
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/gallery-8.jpg" alt="" class="gallery-img">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
@@ -617,7 +617,7 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col-lg-3 col-md-4 col-6 p-0">
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/zum_1.jpg" alt="" class="gallery-img">
                 </div>
@@ -636,7 +636,7 @@
                 <div class="gallery__pic">
                     <img src="img/gallery/zum_4.jpg" alt="" class="gallery-img">
                 </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-md-4 col-6 p-0">
                 <div class="gallery__pic">
                     <img src="img/gallery/zum_5.jpg" alt="" class="gallery-img">
@@ -739,17 +739,19 @@
                 <form action="https://script.google.com/macros/s/AKfycbyMTuHale-e3ONIHs5DpyDHYdWEsI0ViwWSfXUcZsMCbGVw9V2XYIXTN5R3q_zuPK4U/exec" class="appointment__form" >
                     <div class="row">
                         <div class="col-lg-6">
-                            <input type="text" placeholder="Name">
+                            <input type="text" name="Name"  placeholder="Name" id="name" required />
                         </div>
                         <div class="col-lg-6">
-                            <input type="text" placeholder="Email">
+                            <input type="email"  name="Email" id="email"  placeholder="Email" required>
                         </div>
                         <div class="col-lg-6">
-                            <input type="text" placeholder="Phone">
+                            <input type="text" type="tel" name="Phone" id="whatsapp" required />
                         </div>
                         <div class="col-lg-6">
-                            <select class="class-select">
+                            <select id="service" class="class-select" name="Service">
                                 <option value="">Choose Your Class</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Zumba">Zumba</option>
                             </select>
                         </div>
                         <div class="col-lg-12 text-center">
@@ -915,6 +917,7 @@
           const name = document.getElementById("name").value;
           const phone = document.getElementById("whatsapp").value;
           const email = document.getElementById("email").value;
+          const service = document.getElementById("service").value;
       
           // Wait 1 second then open WhatsApp (give time for submission)
           setTimeout(() => {
@@ -923,7 +926,7 @@
               "Name: " + name + "%0a" +
               "Phone: " + phone + "%0a" +
               "Email: " + email + "%0a" +
-              "Service: Fitness Program";
+              "Service: " + service + "%0a";
             
             phone_no = "919808421337"
             const whatsappURL = "https://wa.me/" + phone_no + "?text=" + message;
