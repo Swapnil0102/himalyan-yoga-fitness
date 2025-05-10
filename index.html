@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Himalyan Yog</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MN0N26D1VN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MN0N26D1VN');
+</script>
+
+<style>
+    /* Container settings for uniformity */
+.gallery__pic {
+    position: relative;
+    width: 100%;  /* Let the container adjust responsively */
+    height: 100%; /* Fixed height for all images */
+    overflow: hidden;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* Center the image and crop from middle */
+    object-position: center;  /* Always crop from the middle */
+    display: block;
+}
+
+.col-lg-3, .col-md-4, .col-6 {
+    padding: 5px;  /* Add spacing between images */
+}
+
+/* Responsive breakpoints for small and medium screens */
+@media (max-width: 768px) {
+    .col-lg-3 {
+        width: 50%;  /* 2 images per row on medium screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-3 {
+        width: 100%;  /* 1 image per row on small screens */
+    }
+}
+
+</style>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu">
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <div class="offcanvas__widget">
+            <ul>
+                <li>CALL US: + 91 914-915-1212</li>
+                <li>WRITE US: info.himalayanyog@gmail.COM</li>
+                <!-- <li>OPENING TIMES: MON - FRI: 6:00 - 21:00</li> -->
+            </ul>
+            <a href="#" class="primary-btn" style="background: #041454;" data-toggle="modal" data-target="#bookNowModal">CONTACT US</a>
+        </div>
+        <nav class="header__menu">
+            <ul class="mobile-menu">
+                <li class="active"><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <!-- <li><a href="./classes.html">Classes</a></li> -->
+                <!-- <li><a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="./classes-details.html">Classes Details</a></li>
+                        <li><a href="./blog-details.html">Blog Details</a></li>
+                        <li><a href="./pricing.html">Pricing</a></li>
+                        <li><a href="./faq.html">Faq</a></li>
+                    </ul>
+                </li>
+                <li><a href="./blog.html">Blog</a></li> -->
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="offcanvas__social">
+            <a href="https://www.facebook.com/profile.php?id=61575078960866"><i class="fa fa-facebook"></i></a>
+            <!-- <<a href="#"><i class="fa fa-twitter"></i></a> -->
+            <a href="https://www.instagram.com/himalayanyogofficial"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aditi-singh-463976359/"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__logo">
+                            <a href="./index.html"><img src="img/logo.png" style="max-width: 69%;"></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-9">
+                        <div class="header__top__widget">
+                            <ul>
+                                <li>CALL US: + 91 914-915-1212</li>
+                                <li>WRITE US: INFO.HIMALYANYOG@GMAIL.COM</li>
+                                <!-- <li>OPENING TIMES: MON - FRI: 6:00 - 21:00</li> -->
+                            </ul>
+                            <a href="#" class="primary-btn" style="background: #041454;" data-toggle="modal" data-target="#bookNowModal">CONTACT US</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="./index.html">Home</a></li>
+                                <li><a href="./about-us.html">About</a></li>
+                                <!-- <li><a href="./classes.html">Classes</a></li> -->
+                                <!-- <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="./classes-details.html">Classes Details</a></li>
+                                        <li><a href="./blog-details.html">Blog Details</a></li>
+                                        <li><a href="./pricing.html">Pricing</a></li>
+                                        <li><a href="./faq.html">Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="./blog.html">Blog</a></li> -->
+                                <li><a href="./contact.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="header__social">
+                            <a href="https://www.facebook.com/profile.php?id=61575078960866"><i class="fa fa-facebook"></i></a>
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <a href="https://www.instagram.com/himalayanyogofficial"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/aditi-singh-463976359/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="hero__sliders owl-carousel">
+            <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>Welcome to Himalayan Yog</span>
+                                <h2>Yoga for Your Busy Life Wellness at Your Fingertips.</h2>
+                                <!-- <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a> -->
+                                <a href="#" class="primary-btn" style="background-color: #59abc8; color: #02051e;" data-toggle="modal" data-target="#bookNowModal">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <span>Welcome to Himalayan Yog</span>
+                                <h2>Find Balance in the Chaos—Live Yoga Anytime, Anywhere.</h2>
+                                <!-- <a href="#" class="primary-btn"  style="background-color: #59abc8; color: #02051e;">BOOK NOW</a> -->
+                                <a href="#" class="primary-btn" style="background-color: #59abc8; color: #02051e;" data-toggle="modal" data-target="#bookNowModal">BOOK NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Book Now Modal -->
+<div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="bookNowModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="border-radius: 12px;">
+        <div class="modal-header" style="background-color: #59abc8; color: #fff;">
+          <h5 class="modal-title" id="bookNowModalLabel">Start Your Fitness Journey</h5>
+          <button id="close-modal-btn" type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff;">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        <!-- Hidden iframe to avoid CORS issues -->
+        <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+        <form method="POST" id="bookNowForm" action="https://script.google.com/macros/s/AKfycbyMTuHale-e3ONIHs5DpyDHYdWEsI0ViwWSfXUcZsMCbGVw9V2XYIXTN5R3q_zuPK4U/exec" target="hidden_iframe">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="Name" class="form-control" id="name" required />
+            </div>
+
+            <div class="form-group">
+                <label for="whatsapp">Phone No. (Whatsapp)</label>
+                <input type="tel" name="Phone" class="form-control" id="whatsapp" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="Email" class="form-control" id="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select Program</label> <br>
+                <select class="form-control" id="service" name="Service" required>
+                <option value="">-- Choose a Service --</option>
+                <option value="Yoga">Yoga</option>
+                <option value="Zumba">Zumba</option>
+                <!-- Add more programs if needed -->
+                </select>
+            </div>
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+
+              
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn" style="background-color: #59abc8; color: #fff;" form="bookNowForm">Submit</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+    <!-- About Section Begin -->
+    <section class="home-about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="home__about__pic">
+                        <div class="home__about__pic__item large-item set-bg" data-setbg="img/classes/New/class_5_name_tag.png"></div>
+                        <div class="home__about__pic__item">
+                          
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="img/classes/New/class_7.jpg"></div>
+                            <div class="home__about__pic__item__inner set-bg" data-setbg="img/classes/New/class_8.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home__about__text">
+                        <div class="section-title">
+                            <img src="img/mountain_clip.png" alt="" style="max-width: 19%;">
+                            <h2>Welcome to Himalayan Yog</h2>
+                        </div>
+                        <span>“Yoga for Your Busy Life—Wellness at Your Fingertips.”</span>
+                        <p>Himalayan Yog helps busy people stay fit and healthy with live online Yoga and Zumba classes. With today’s hectic lifestyles, many struggle to attend offline fitness sessions. Himalayan Yog offers a flexible, affordable solution with expert-led classes that fit easily into any schedule.</p>
+                        <p class="para-2" style=" margin-bottom: 21px; ">Himalayan Yog offers live, expert-led Yoga and Zumba classes, including specialized sessions for pregnant women, household ladies, and busy working professionals. Whether you want to improve flexibility with Yoga or boost energy with Zumba, Himalayan Yog helps you stay active, reduce stress, and lead a healthier life – all from the comfort of your home.
+
+                        </p>
+                        <a href="#" class="primary-btn" style="background: #041454;">MORE ABOUT US</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <img src="img/mountain_clip.png" alt="" style="max-width: 8%;">
+                        <h2>Enjoy All Aspects Of Yoga</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="services__list">
+                <div class="row">
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-1.png" alt="">
+                            <h5>Asana</h5>
+                            <p>Strengthen your body and mind through traditional yoga postures rooted in India’s ancient wisdom and prosperity.
+
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-2.png" alt="">
+                            <h5>Meditation</h5>
+                            <p>Calm your mind and connect within through timeless techniques that nurture focus, clarity, and inner peace.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-3.png" alt="">
+                            <h5>Mudra</h5>
+                            <p>Channel inner energy and deepen concentration through sacred hand gestures that elevate your practice.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-4.png" alt="">
+                            <h5>Bandhas</h5>
+                            <p>Unlock inner strength and control your energy flow through powerful yogic locks that deepen your practice from within.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-5.png" alt="">
+                            <h5>Philosophy</h5>
+                            <p>Dive into the timeless wisdom of yoga that guides conscious living, self-awareness, and a deeper connection to life’s purpose.</p>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-6">
+                        <div class="services__item">
+                            <img src="img/services/services-6.png" alt="">
+                            <h5>Pranayama</h5>
+                            <p>Harness the breath to energize your body, mind, and access deeper states of awareness through ancient breathing techniques.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Chooseus Section Begin -->
+    <section class="chooseus spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="chooseus__text">
+                        <h2>Why Choose Us</h2>
+                        <p>Join our online Yoga sessions led by certified 500-hour Yoga trainers who have studied and practiced for years in the heart of Rishikesh — the world capital of Yoga.
+                            Embark on a life-transforming journey from the comfort of your home, guided by masters rooted in ancient wisdom.</p>
+                    </div>
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="img/chooseus/choose-1.png" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">1008</h2>
+                            <p>Students</p>
+                        </div>
+                    </div>
+                    <!-- <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="img/chooseus/choose-2.png" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">1</h2>
+                            <p>Years Of Experience</p>
+                        </div>
+                    </div> -->
+                    <!-- <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="img/chooseus/choose-3.png" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">3</h2>
+                            <p>Branches</p>
+                        </div>
+                    </div> -->
+                    <div class="chooseus__item">
+                        <div class="chooseus__item__icon">
+                            <img src="img/chooseus/choose-4.png" alt="">
+                        </div>
+                        <div class="chooseus__item__text">
+                            <h2 class="choose-counter">15</h2>
+                            <p>Expert Staffs</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="chooseus__pic">
+                        <img src="img/chooseus/choose-pic.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Chooseus Section End -->
+
+
+<!-- Choose Us Section Begin -->
+<section class="chooseus spad" style="background: #ffffff;">
+    <div class="container">
+        <div class="row">
+            <!-- Text and Info Section -->
+            <div class="col-lg-6">
+                <div class="chooseus__text">
+                    <h2>Online Zumba Classes</h2>
+                    <br>
+                    <p>Experience the joy of Zumba from the comfort of your home. Our engaging and interactive classes are perfect for all fitness levels. Stay active, energized, and motivated with us.</p>
+                    <br>
+                    <p>
+                        ~ Live and Interactive Sessions<br>
+                        ~ Fun and Effective Workouts<br>
+                        ~ Community Support<br>
+                        ~ Flexible Scheduling
+                    </p>
+                    <br>
+                    <p>Join now and let's dance our way to fitness!</p>
+                </div>
+
+                <!-- Stats Section -->
+                <div class="chooseus__item">
+                    <div class="chooseus__item__icon">
+                        <img src="img/chooseus/choose-1.png" alt="Students Icon">
+                    </div>
+                    <div class="chooseus__item__text">
+                        <h2 class="choose-counter">90</h2>
+                        <p>Weight Loss (%)</p>
+                    </div>
+                </div>
+
+                <div class="chooseus__item">
+                    <div class="chooseus__item__icon">
+                        <img src="img/chooseus/choose-2.png" alt="Experience Icon">
+                    </div>
+                    <div class="chooseus__item__text">
+                        <h2 class="choose-counter">85</h2>
+                        <p>Heart Health (%)</p>
+                    </div>
+                </div>
+
+                <div class="chooseus__item">
+                    <div class="chooseus__item__icon">
+                        <img src="img/chooseus/choose-3.png" alt="Branches Icon">
+                    </div>
+                    <div class="chooseus__item__text">
+                        <h2 class="choose-counter">75</h2>
+                        <p> Flexibility (%)</p>
+                    </div> 
+                </div>
+
+                <div class="chooseus__item">
+                    <div class="chooseus__item__icon">
+                        <img src="img/chooseus/choose-4.png" alt="Staff Icon">
+                    </div>
+                    <div class="chooseus__item__text">
+                        <h2 class="choose-counter">95</h2>
+                        <p>Stress Relief (%)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+            <div class="col-lg-6">
+                <div class="chooseus__pic">
+                    <img src="img/chooseus/choose-pic_2.jpg" style="min-width: 86%;" alt="Group of People Enjoying Zumba Class">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Choose Us Section End -->
+
+
+    <!-- Classes Section Begin -->
+    <section class="upcoming-classes spad" style="    background: #f5f6fa;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <h2>Upcoming Batches</h2>
+                        <p>The trainings are multi-style and you will learn and practice Hatha Vinyasa (flow)<br /> and
+                            Yin Yoga.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <!-- <div class="classes__item__pic set-bg" data-setbg="img/classes/classes-1.jpg"> -->
+                            <div class="classes__item__pic set-bg" data-setbg="img/classes/New/class_1.jpg" >
+                            <!-- <div class="classes__item__pic set-bg" data-setbg="img/team/khusbhoo_1.png" > -->
+                                <span style="background: #041454;">15 May 2025</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>20 Days | Mon-Fri</p>
+                            <h4><a href="#">Live Yoga - 7:00 AM</a></h4>
+                            <!-- <h6>Khushboo Bhatiya<span>- Yoga Teacher</span></h6> -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsrs_VFwfaAByesE2Ye8Rt_rIiYp2l4TotpaSlVdpBOkvpdg/viewform" class="class-btn">JOIN NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <div class="classes__item__pic set-bg" data-setbg="img/classes/New/class_3.png">
+                            <span style="background: #041454;">15 May 2025</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>20 Days | Mon-Fri</p>
+                            <h4><a href="#">Live Yoga - 8:00 AM</a></h4>
+                            <!-- <h6>Rubal Solanki <span>- Yoga Teacher</span></h6> -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsrs_VFwfaAByesE2Ye8Rt_rIiYp2l4TotpaSlVdpBOkvpdg/viewform" class="class-btn">JOIN NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <!-- <div class="classes__item__pic set-bg" data-setbg="img/classes/classes-1.jpg"> -->
+                            <div class="classes__item__pic set-bg" data-setbg="img/classes/New/class_4.jpg" >
+                            <!-- <div class="classes__item__pic set-bg" data-setbg="img/team/khusbhoo_1.png" > -->
+                                <span style="background: #041454;">1 Jun 2025</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>20 Days | Mon-Fri</p>
+                            <h4><a href="#">Live Yoga - 6:00 PM</a></h4>
+                            <!-- <h6>Khushboo Bhatiya<span>- Yoga Teacher</span></h6> -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsrs_VFwfaAByesE2Ye8Rt_rIiYp2l4TotpaSlVdpBOkvpdg/viewform" class="class-btn">JOIN NOW</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <div class="classes__item__pic set-bg" data-setbg="img/classes/New/class_2.jpg">
+                            <span style="background: #041454;">1 Jun 2025</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>20 Days | Mon-Fri</p>
+                            <h4><a href="#">Live Yoga - 7:00 PM</a></h4>
+                            <!-- <h6>Rubal Solanki <span>- Yoga Teacher</span></h6> -->
+                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfsrs_VFwfaAByesE2Ye8Rt_rIiYp2l4TotpaSlVdpBOkvpdg/viewform" class="class-btn">JOIN NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="classes__item">
+                        <div class="classes__item__pic set-bg" data-setbg="img/classes/classes-3.jpg">
+                            <span style="background: #041454;">1 Jun 2019</span>
+                        </div>
+                        <div class="classes__item__text">
+                            <p>14 Days | Start on 10th Every Month</p>
+                            <h4><a href="#">300 Hour Yoga Course Rishikesh</a></h4>
+                            <h6>Jordan Lawson <span>- Yoga Teacher</span></h6>
+                            <a href="#" class="class-btn">JOIN NOW</a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Classes Section End -->
+  <!-- Gallery Section Begin -->
+<section class="gallery p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title normal-title">
+                    <h2>Our Gallery</h2>
+                    <p>These are the beautiful Yoginis who have shared their journey and growth with us. Take a look!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/new/gallery-1.png" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/new/gallery-2.png" alt="" class="gallery-img">
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-3.jpg" alt="" class="gallery-img">
+                </div>
+            </div> -->
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/new/gallery-4.png" alt="" class="gallery-img">
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-5.jpg" alt="" class="gallery-img">
+                </div>
+            </div> -->
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-6.jpg" alt="" class="gallery-img">
+                </div>
+            </div> -->
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/new/gallery-10.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/gallery-8.jpg" alt="" class="gallery-img">
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+
+
+<!-- Gallery Section End -->
+
+
+
+<!-- Gallery Section End -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_1.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_2.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_3.jpg" alt="" class="gallery-img">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <img src="img/gallery/zum_4.jpg" alt="" class="gallery-img">
+                </div>
+            </div> -->
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <video class="gallery-img" controls>
+                        <source src="img/gallery/new/video_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <video class="gallery-img" controls>
+                        <source src="img/gallery/new/video_9.MOV" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <video class="gallery-img" controls>
+                        <source src="img/gallery/new/video_7.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 p-0">
+                <div class="gallery__pic">
+                    <video class="gallery-img" controls>
+                        <source src="img/gallery/new/video_2.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Gallery Section End -->
+
+    <!-- Team Section Begin -->
+    <section class="instructor spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title normal-title">
+                        <h2>Meet Our Instructors</h2>
+                        <p>Our Indian and western teachers are highly qualified and will be happy to share this<br />
+                            spiritual journey with you.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="instructor__item">
+                        <div class="instructor__item__pic">
+                            <img src="img/team/khushboo_2.JPG" alt="">
+                        </div>
+                        <div class="instructor__item__text">
+                            <h5>Khushboo Bhatiya</h5>
+                            <span>Yoga Trainer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="instructor__item">
+                        <div class="instructor__item__pic">
+                            <img src="img\team\rubal_2.jpeg" alt="">
+                        </div>
+                        <div class="instructor__item__text">
+                            <h5>Rubal Solanki</h5>
+                            <span>Yoga Trainer</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">
+                    <div class="instructor__item">
+                        <div class="instructor__item__pic">
+                            <img src="img/instructor/instructor-3.jpg" alt="">
+                        </div>
+                        <div class="instructor__item__text">
+                            <h5>Melissa Smith</h5>
+                            <span>Yoga Trainer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+    <!-- Appoinment Section Begin -->
+    <section class="appointment">
+        <div class="container">
+            <div class="appointment__text" style="background: #041454;">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title">
+                            <img src="img/mountain_clip.png" alt="" style=" max-width: 12%;">
+                            <h2>Chat with us</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- <iframe name="hidden_iframe" style="display:none;"></iframe> -->
+                <form  id="customerSupportForm" class="appointment__form"  >
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <input type="text" name="Name"  placeholder="Name" id="name_cs" required />
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="email"  name="Email" id="email_cs"  placeholder="Email">
+                        </div>
+                        <div class="col-lg-6">
+                            <input type="text" type="tel" name="Phone"  placeholder="Phone No. (Whatsapp)" id="whatsapp_cs" required />
+                        </div>
+                        <div class="col-lg-6">
+                            <select id="service_cs" class="class-select" name="Service">
+                                <option value="">Choose Your Class</option>
+                                <option value="Yoga">Yoga</option>
+                                <option value="Zumba">Zumba</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <textarea placeholder="Message / Question?" id="enquiry_cs"></textarea>
+                            <button type="submit" form="customerSupportForm">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Appoinment Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial spad">
+        <div class="container">
+            <div class="testimonial__slider owl-carousel">
+                <div class="testimonial__item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="testimonial__text">
+                                <p>Yoga teacher with 3+ yearsof teaching experience at ONGC, and various MNCs, studios across India and abroad.
+                                    MA in Yogashastra (Kaivalyadham), 500hr RYT (Yoga Alliance USA), Ministry of Ayush certified.
+                                    Specialized in Hatha, Vinyasa & Yin Yoga, creating mindful, inclusive spaces.</p>
+                                <img src="img/testimonial/testimonial-1.png" alt="">
+                                <h5>Khushboo Bhatiya <span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial__item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="testimonial__text">
+                                <p>I m Rubal Solanki, certified yoga instructor from university of patanjali. I am dedicated to providing accessible and engaging yoga practices for all levels, from beginners to experienced practitioners. Explore a variety of flows, including hatha and ashtanga, designed to boost your physical and mental well-being.</p>
+                                <img src="img/team/rubal_profile.png" alt="">
+                                <h5>Rubal Solanki<span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="testimonial__item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="testimonial__text">
+                                <p>This is my second time completing a 200 hr TTC from Himalyan Yog and I loved the experiences
+                                    even more than the first time that I had done in 2016.</p>
+                                <img src="img/instructor/instructor-3.jpg" alt="">
+                                <h5>Melissa Smith<span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="testimonial__item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="testimonial__text">
+                                <p>This is my second time completing a 200 hr TTC from Himalyan Yog and I loved the experiences
+                                    even more than the first time that I had done in 2017.</p>
+                                <img src="img/testimonial/testimonial-1.png" alt="">
+                                <h5>Gunjan Taneja <span>- Trainer</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Footer Section Begin -->
+    <section class="footer" style="background: #002031;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <img src="img/footer-logo.jpg" alt="" style="max-width: 66%;" >
+                        <ul>
+                            <li><i class="fa fa-clock-o"></i> Mon - Fri: 6:00am - 09:00pm</li>
+                            <li><i class="fa fa-clock-o"></i> Sat - Sun: 7:00am - 08:00pm</li>
+                        </ul>
+                        <form action="#" class="subscribe-form">
+                            <input type="text" placeholder="Your Email">
+                            <button type="submit" style="
+                                background: #03537e
+                            "><i class="fa fa-send"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Inspiration</h5>
+                        <ul>
+                            <li><a href="#">Online Pilates</a></li>
+                            <li><a href="#">Yoga for Beginners</a></li>
+                            <li><a href="#">Online Pilates</a></li>
+                            <li><a href="#">Online Yoga</a></li>
+                            <li><a href="#">Conditioning</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>About Us</h5>
+                        <ul>
+                            <li><a href="#">Our Vision</a></li>
+                            <li><a href="#">Our Mission</a></li>
+                            <li><a href="#">Meet The Team</a></li>
+                            <li><a href="#">Introduce</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Contact Us</h5>
+                        <ul class="footer-address">
+                            <li><i class="fa fa-phone"></i> + 91 914-915-1212</li>
+                            <li><i class="fa fa-envelope"></i> info.himlayanyog@gmail.com</li>
+                            <li><i class="fa fa-location-arrow"></i> Sector 39, Gurugram</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by Himalayan Yog.</a></p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="footer__copyright__social">
+                            <a href="https://www.facebook.com/profile.php?id=61575078960866"><i class="fa fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/himalayanyogofficial"><i class="fa fa-instagram"></i></a>
+                            <!-- <a href="#"><i class="fa fa-twitter"></i></a> -->
+                            <a href="https://www.linkedin.com/in/aditi-singh-463976359/"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+
+
+
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.barfiller.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+
+       <script>
+        document.getElementById("bookNowForm").addEventListener("submit", function (e) {
+          // Get form values
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("whatsapp").value;
+          const email = document.getElementById("email").value;
+          const service = document.getElementById("service").value;
+      
+          // Wait 1 second then open WhatsApp (give time for submission)
+          setTimeout(() => {
+            const message =
+              "Hi, I'm interested in your fitness program!%0a" +
+              "Name: " + name + "%0a" +
+              "Phone: " + phone + "%0a" +
+              "Email: " + email + "%0a" +
+              "Service: " + service + "%0a";
+            
+            phone_no = "9149151212"
+            const whatsappURL = "https://wa.me/" + phone_no + "?text=" + message;
+            window.open(whatsappURL, "_blank");
+            
+            console.log("Form submitted successfully!")
+            // alert("Form submitted successfully!");
+            e.target.reset();
+            var modal = document.getElementById('close-modal-btn');
+            modal.click();
+            
+          }, 1000); // delay to ensure form is submitted
+        });
+
+
+        document.getElementById("customerSupportForm").addEventListener("submit", function (e) {
+        //   // Get form values
+          const name = document.getElementById("name_cs").value;
+          const phone = document.getElementById("whatsapp_cs").value;
+          const email = document.getElementById("email_cs").value;
+          const service = document.getElementById("service_cs").value;
+          const msg = document.getElementById("enquiry_cs").value;
+        //   console.log(email + name + phone + service)
+
+        const message =
+            "Hi, I'm interested in your fitness program!%0a" +
+            "Name: " + name + "%0a" +
+            "Phone: " + phone + "%0a" +
+            "Email: " + email + "%0a" +
+            "Service: " + service + "%0a" +
+            "Enquiry Message: " + msg + "%0a";
+
+            // alert(email + name + phone + service + msg);
+            
+            phone_no = "919149151212"
+            const whatsappURL = "https://wa.me/" + phone_no + "?text=" + message;
+            window.open(whatsappURL, "_blank");
+            
+            console.log("Form submitted successfully!")
+        // alert(email + name + phone + service);
+        });
+
+
+      </script>
+      
+
+       <script>
+            function handleWhatsAppRedirect(form) {
+                // Dummy test values
+                const name = "Test User";
+                const phone = "9808421337"; // Fixed WhatsApp number
+                const email = "test@example.com";
+                const service = "Zumba";
+
+                // Compose WhatsApp message
+                const message = 
+                    "Hi, I'm interested in your fitness program!%0a" +
+                    "Name: " + name + "%0a" +
+                    "Phone: " + phone + "%0a" +
+                    "Email: " + email + "%0a" +
+                    "Service: " + service;
+
+                const whatsappURL = "https://wa.me/" + phone + "?text=" + message;
+
+                // Open WhatsApp before form submits
+                window.open(whatsappURL, "_blank");
+
+                // Let the form continue submitting to Google Sheet
+                return true;
+            }
+      </script>
+      
+      
+</body>
+
+</html>
